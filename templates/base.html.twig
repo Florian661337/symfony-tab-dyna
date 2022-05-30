@@ -14,11 +14,6 @@
         {% endblock %}
     </head>
     <body>
-    {% if block('Accueil') is not defined %}
-    <a href="{{ path('app_estate') }}">
-   <button type="button" class="btn btn-primary btn-lg button-accueil">Accueil</button>
-   </a>
-   {% endif %}
         {% block body %}{% endblock %}
     </body>
 </html>

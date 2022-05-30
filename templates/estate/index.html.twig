@@ -60,11 +60,11 @@
     {# <img src="{{ asset('img/arrow-left.png') }}" id="img-previous" alt="" style="border:1px solid black;width:30px;height:30px;float:left;margin-top:50px;cursor:pointer;"> #}
     <form method="post" style="width:30px;height:30px;float:left;margin-top:50px;cursor:pointer;">
         <input type="hidden" name="prev" value="{{ prev_page }}">
-        <input type="submit" class="btn btn-info" value="prev">
+        <input type="submit" class="btn btn-info" value="Prev">
     </form>
     <form method="post" style="width:30px;height:30px;float:right;margin-top:50px;cursor:pointer;">
         <input type="hidden" name="next" value="{{ next_page }}">
-        <input type="submit" class="btn btn-info" value="next">
+        <input type="submit" class="btn btn-info" value="Next">
     </form>
     <p class="text-center fw-bold">{{ current_page }}</p>
     <div class="container">
@@ -85,7 +85,7 @@
                     <tr id="tr{{estate.id}}">
                         <td>
                             {{estate.id}}<br/>
-                            <a href="edit/{{ estate.id }}" target="_blank"class="btn btn-primary btn-block btn-sm">Voir</a>
+                            <a href="edit/{{ estate.id }}" target=""class="btn btn-primary btn-block btn-sm">Voir</a>
                         </td>
                         <td>{{estate.name}}</td>
                         <td>{{estate.price}}</td>

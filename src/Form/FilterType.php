@@ -18,7 +18,8 @@ class FilterType extends AbstractType
                 'attr' => [
                     'placeholder' => 'Rechercher par ville',
                     'class' => 'form-control'
-                ]
+                ],
+                'required' => false
             ])
             ->add('submit', SubmitType::class, [
                 'label' => "Rechercher",
